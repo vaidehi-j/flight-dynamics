@@ -18,12 +18,8 @@ def x_cp(x_data, location_tolerance):  # Ref "The Theoretical Prediction of the 
 
     N = np.size(x_data)
 
-    length_coord = [1.2, 6, 0.8]
-
     x_with_tolerance = x_data + np.random.uniform(low=-location_tolerance, high=location_tolerance, size=N)
     rocket_length = x_with_tolerance[-1]
-
-    rocket_length = np.sum(length_coord + np.random.uniform(low=-location_tolerance, high=location_tolerance, size=3))
 
     # Nose
     CNalpha_nose = 2 # Coefficient of Normal Force W.R.T. AoA for an ogive nosecone
