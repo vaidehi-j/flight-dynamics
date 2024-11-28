@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-file = "massDistribution.csv"
+file = "rocket_data.csv"
 
 data = np.loadtxt(file, delimiter=",")
 
